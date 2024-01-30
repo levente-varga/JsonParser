@@ -86,8 +86,8 @@ namespace Json
 		Type type;
 		Value value;
 
-		operator List() const;
-		operator Object() const;
+		operator Json::List() const;
+		operator Json::Object() const;
 
 		void addChild(std::pair<std::string, std::shared_ptr<Node>> child);
 		void addChild(std::shared_ptr<Node> child);

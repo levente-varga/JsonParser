@@ -2,6 +2,8 @@
 
 Json::Tokenizer::Tokenizer(std::string fileName)
 {
+	previousReaderPosition = 0;
+
 	if (file.is_open())
 	{
 		file.close();

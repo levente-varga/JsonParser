@@ -8,6 +8,8 @@ Json::Node::Node()
 
 Json::Node::Node(Value value) : value(value)
 {
+	type = Type::Root;
+
 	if (std::holds_alternative<bool>(value))
 		type = Type::Boolean;
 	if (std::holds_alternative<int>(value))
